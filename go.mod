@@ -39,3 +39,6 @@ require (
 //   - Bumped golang.org/x/net and golang.org/x/sys to latest patch versions for security fixes.
 //   - Bumped golang.org/x/net to v0.23.0 and golang.org/x/sys to v0.18.0 (CVE-2023-44487 / HTTP/2 rapid reset fix).
 //   - TODO: explore replacing go.uber.org/zap with slog once the upstream project matures.
+//   - TODO: evaluate dropping github.com/spf13/viper in favour of a lighter config loader;
+//     it pulls in a lot of indirect deps (afero, fsnotify, hcl, ini, toml, yaml...) that
+//     seem overkill for what this project actually needs from it.
