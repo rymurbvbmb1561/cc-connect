@@ -25,8 +25,8 @@ require (
 	github.com/subosito/gotenv v1.6.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/exp v0.0.0-20231006140954-1f2e4552b6f0 // indirect
-	golang.org/x/net v0.21.0 // indirect
-	golang.org/x/sys v0.17.0 // indirect
+	golang.org/x/net v0.23.0 // indirect
+	golang.org/x/sys v0.18.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
@@ -37,4 +37,5 @@ require (
 //
 // Notes:
 //   - Bumped golang.org/x/net and golang.org/x/sys to latest patch versions for security fixes.
+//   - Bumped golang.org/x/net to v0.23.0 and golang.org/x/sys to v0.18.0 (CVE-2023-44487 / HTTP/2 rapid reset fix).
 //   - TODO: explore replacing go.uber.org/zap with slog once the upstream project matures.
