@@ -42,3 +42,5 @@ require (
 //   - TODO: evaluate dropping github.com/spf13/viper in favour of a lighter config loader;
 //     it pulls in a lot of indirect deps (afero, fsnotify, hcl, ini, toml, yaml...) that
 //     seem overkill for what this project actually needs from it.
+//   - NOTE: gorilla/websocket is only used in a handful of places; worth checking if the
+//     standard library's net/http hijack approach could replace it and trim one more dep.
